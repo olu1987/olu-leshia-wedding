@@ -45,8 +45,8 @@
 			$mail->Port = 25;							// TCP port to connect to
 			
 			//Recipients
-			$mail->setFrom('youremail@domain.com');
-			$mail->addAddress('youremail@domain.com');	// Add a recipient
+			$mail->setFrom('olu@claymoreminds.com');
+			$mail->addAddress('olu@claymoreminds.com');	// Add a recipient
 
 			//Content
 			$mail->isHTML(true);						// Set email format to HTML
