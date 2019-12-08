@@ -60,3 +60,14 @@ body {
 .navbar-brand > img {
   width: 130px;
 }
+
+.profile-pic {
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.navbar {
+  box-shadow: none;
+  border-bottom: 1px solid #eeeeee;
+}
