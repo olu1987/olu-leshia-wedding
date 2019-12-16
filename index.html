@@ -115,9 +115,6 @@
 								<a class="nav-link" href="#people">People</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#portfolio">Portfolio</a>
-							</li>
-							<li class="nav-item">
 								<a class="nav-link" href="#event">Event</a>
 							</li>
 							<li class="nav-item">
@@ -216,7 +213,8 @@
 							<div class="tline-thumbnail story-img-2">
 								<div class="img-date-right">
 									<div class="day">12</div>
-									<div class="month">jan</div>
+									<div class="month">September</div>
+									<div class="month">2015</div>
 								</div>
 							</div>
 						</div>
@@ -232,16 +230,17 @@
 						<div class="col-sm-12 col-md-6 pr-70 text-center">
 							<div class="tline-thumbnail story-img-3">
 								<div class="img-date-left">
-									<div class="day">12</div>
-									<div class="month">jan</div>
+									<div class="day">13</div>
+									<div class="month">jun</div>
+									<div class="month">2019</div>
 								</div>
 							</div>
 						</div>
 						<div class="tline-right-side col-md-6 pl-70 text-left date-circle margin-b-2">
 							<div class="tline-arrow"></div>
 							<h4 class="tline-title font-weight-light">The Proposal</h4>
-							<p>Donec a velit molestie, auctor elit a, varius nibh. Nunc hendrerit, leo eu interdum auctor, nibh massa auctor mi, id semper ante nibh egestas ex. Praesent ex dolor.</p>
-							<a class="link" href="blog-single-post.html">Read More</a>
+							<p>In June of 2019, Olu suprised Leshia with a private concert of some of her favourite love songs, and then asked her to be his wife. And she said YES! Click below to see the instagram post of the occasion.</p>
+							<a class="link" href="https://www.instagram.com/p/Byuwj5kHkPL/">See More</a>
 						</div>
 					</div>
 					<div class="row">
@@ -256,8 +255,9 @@
 						<div class="tline-left-side col-md-6 pr-70 text-right date-circle order-1 main-order-xs-2 main-order-sm-2 margin-b-2">
 							<div class="tline-arrow"></div>
 							<h4 class="tline-title font-weight-light">Our wedding</h4>
-							<p>Donec a velit molestie, auctor elit a, varius nibh. Nunc hendrerit, leo eu interdum auctor, nibh massa auctor mi, id semper ante nibh egestas ex. Praesent ex dolor.</p>
-							<a class="link" href="blog-single-post.html">Read More</a>
+							<p>On the 20th of February 2020, we will make it official and become husband and wife. We can't wait to
+								share our special day with you!
+							</p>
 						</div>
 					</div>
 				</div>
@@ -318,14 +318,16 @@
 						<h2 class="big-heading mt-0 mt-0">
 							<span class="custom-color">Wedding</span> Event
 						</h2>
-						<p class="sub-heading col-lg-8 offset-lg-2 margin-b-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis massa, scelerisque vel diam non.</p>
+						<p class="sub-heading col-lg-8 offset-lg-2 margin-b-5">The entire day will be in Hackney Town Hall, a beautiful venue in the heart of East
+							London.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-6 pr-70 text-right order-1 main-order-xs-2 main-order-sm-2">
-						<h4 class="font-weight-light mt-0">Aliquam vestibulum eros</h4>
-						<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis massa, scelerisque vel diam non, tristique condimentum dui.</p>
-						<p class="margin-b-2">Donec venenatis porta mollis. Fusce quis tincidunt orci. Integer fermentum ante augue, sed accumsan purus ornare vitae. Ut accumsan ornare elit at maximus. Aliquam tincidunt ipsum ut nunc sollicitudin dapibus.</p>
+						<h4 class="font-weight-light mt-0 custom-color">Address & Contact</h4>
+						<p class="">Hackney Town Hall, <br>Mare St, London E8 1EA.<br><a href="tel: 020 8356 3000">020 8356 3000</a>
+						</p>
+						<p class="margin-b-2">Please note that <strong>parking for the venue itself is restricted to serving staff only</strong>. We would highly recommend using public transport as the venue has good transport links in all directions, and is especially close to <a href="https://www.google.com/maps/place/Hackney+Central/@51.5471909,-0.0610869,15.58z/data=!4m8!1m2!2m1!1shackney+central+station!3m4!1s0x48761cfad70c37b9:0xf0d7d77f40115293!8m2!3d51.5471234!4d-0.0567567">Hackney Central overground station</a></p>
 					</div>
 					<div class="col-md-6 pl-70 order-2 main-order-xs-1 main-order-sm-1 margin-sm-b-2">
 						<div class="panel-group line" id="accordion" role="tablist" aria-multiselectable="true">
@@ -540,11 +542,11 @@
 		<script src="js/main.js"></script>
 
 		<!-- Google Map Settings-->
-		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPEhgo7_cRtsINr-1zRzqbtKmixXbhg4U "></script>
 		<script>
 			
 			// Add the map center coordinate
-			var center = {lat: 40.815182, lng: -74.238908};
+			var center = {lat: 51.5450817, lng: -0.0560499};
 
 			var map = new google.maps.Map(document.getElementById('map'), 
 				{
@@ -568,48 +570,25 @@
 	       			});
 
 
-	       		marker.addListener('click', function() {
-		        	infowindow.open(map, marker);
+	       		marker.addListener('load', function() {
+							infowindow.open(map, marker);
 		        });
-
-
 			}			
 
 			// Add the markers to the Map
 			addMarker({
-				coordinate:{lat: 40.815182, lng: -74.238908},
+				coordinate:{lat: 51.5450817, lng: -0.0560499},
 				infowindow:'<div id="content">'+
-	            '<h4 class="font-weight-light"><span class="custom-color">First</span> Point</h4>'+
+	            '<h4 class="font-weight-light"><span class="custom-color">Hackney</span> Town Hall</h4>'+
 	            '<div class="map-info-content">'+
-	            '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vitae, minima blanditiis inventore ea eum?</p>'+
+	            '<p>Mare St, London E8 1EA</p>'+
+	            '<a href="tel: 020 8356 3000">020 8356 3000</a>'+
 	            '</div>'+
 	            '</div>',
 				icon: "img/map_marker.png",
 				
 
 
-			});
-
-			addMarker({
-				coordinate:{lat: 40.815496, lng: -74.225912},
-				infowindow:'<div id="content">'+
-	            '<h4 class="font-weight-light"><span class="custom-color">Second</span> Point</h4>'+
-	            '<div class="map-info-content">'+
-	            '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vitae, minima blanditiis inventore ea eum?</p>'+
-	            '</div>'+
-	            '</div>',
-				icon: "img/map_marker.png",
-			});
-
-			addMarker({
-				coordinate:{lat: 40.812987, lng: -74.245466},
-				infowindow:'<div id="content">'+
-	            '<h4 class="font-weight-light"><span class="custom-color">Third</span> Point</h4>'+
-	            '<div class="map-info-content">'+
-	            '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vitae, minima blanditiis inventore ea eum?</p>'+
-	            '</div>'+
-	            '</div>',
-				icon: "img/map_marker.png",
 			});
 
 	

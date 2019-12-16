@@ -541,9 +541,9 @@ footer h2 {
 
 /*story section images*/
 .story-img-1{ background: url("../img/story_1.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0); }
-.story-img-2{ background: url("../img/story_2.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0); }
-.story-img-3{ background: url("../img/story_3.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0); }
-.story-img-4{ background: url("../img/story_4.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0); }
+.story-img-2{ background: url("../img/custom/first-date-pic.jpg") no-repeat scroll 0 -75px / cover rgba(0, 0, 0, 0); }
+.story-img-3{ background: url("../img/custom/engagement.jpg") no-repeat scroll center 0 / cover rgba(0, 0, 0, 0); }
+.story-img-4{ background: url("../img/custom/DSC_2695\ \(1\).jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0); }
 
 .story-img {
 	height: 14rem;
@@ -554,9 +554,9 @@ footer h2 {
 .story-img-2,
 .story-img-3,
 .story-img-4 {
-	height: 17rem;
+	height: 24rem;
     width: 100%;
-	border-radius: 3px;
+	border: 1px solid goldenrod;
 }
 #story .tline-title{
 	margin-top: 17px;

@@ -73,5 +73,11 @@ body {
 }
 
 #people {
-  background: #f1f1f1;
+  background: #faf8f8;
+  border-top: 1px solid goldenrod;
+  border-bottom: 1px solid goldenrod;
+}
+
+strong {
+  font-weight: 700;
 }
