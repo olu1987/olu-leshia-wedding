@@ -405,5 +405,30 @@ $(document).ready(function() {
 
 	});
 
+	const form = document.getElementById('auth-form');
+	const password = document.getElementById('password');
+	const overlay = document.getElementById('auth-overlay');
+	const error = document.getElementById('auth-error');
+
+  form.onsubmit = submit;
+
+function invalid(event) {
+  error.removeAttribute('hidden');
+}
+
+function submit(event) {
+	event.preventDefault();
+	if (password.value.toLowerCase() === 'ol2020') {
+		overlay.setAttribute('hidden', '');
+    localStorage.setItem('auth', true);
+	} else {
+    error.removeAttribute('hidden');
+	}
+}
+
+const auth = localStorage.getItem('auth', true);
+if (auth) {
+	overlay.setAttribute('hidden', '');
+}
 
 });

@@ -81,3 +81,25 @@ body {
 strong {
   font-weight: 700;
 }
+
+.auth-overlay {
+  position: fixed;
+  z-index: 100000000;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  top: 0;
+  font-family: domine;
+  text-align: center;
+  align-items: center;
+}
+
+.auth-overlay div {
+  justify-content: center;
+}
+
+.auth-overlay form {
+  width: 100%;
+  padding: 10px;
+}
