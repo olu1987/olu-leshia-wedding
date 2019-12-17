@@ -405,10 +405,10 @@ $(document).ready(function() {
 
 	});
 
-	const form = document.getElementById('auth-form');
-	const password = document.getElementById('password');
-	const overlay = document.getElementById('auth-overlay');
-	const error = document.getElementById('auth-error');
+	var form = document.getElementById('auth-form');
+	var password = document.getElementById('password');
+	var overlay = document.getElementById('auth-overlay');
+	var error = document.getElementById('auth-error');
 
   form.onsubmit = submit;
 
@@ -416,19 +416,33 @@ function invalid(event) {
   error.removeAttribute('hidden');
 }
 
+function receptionOnly() {
+	var panelArea = $('.order-2');
+	panelArea.addClass('reception-only')
+	$(document.getElementById('collapse_4')).addClass('show');
+	$(document.querySelector('.reception-panel')).addClass('active');
+}
+
 function submit(event) {
+	var passStr = password.value.toLowerCase();
 	event.preventDefault();
-	if (password.value.toLowerCase() === 'ol2020') {
+	if (passStr === 'ol2020' || passStr === 'olrc2020') {
 		overlay.setAttribute('hidden', '');
-    localStorage.setItem('auth', true);
+		localStorage.setItem('auth', passStr);
+		if (passStr === 'olrc2020') {
+			receptionOnly();
+		}
 	} else {
     error.removeAttribute('hidden');
 	}
 }
 
-const auth = localStorage.getItem('auth', true);
+var auth = localStorage.getItem('auth');
 if (auth) {
 	overlay.setAttribute('hidden', '');
+	if (auth === 'olrc2020') {
+		receptionOnly();
+	}
 }
 
 });

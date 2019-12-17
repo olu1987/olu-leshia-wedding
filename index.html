@@ -373,16 +373,17 @@
 									</div>
 								</div>
 							</div>
-							<div class="panel panel-default">
+							<div class="panel panel-default reception-panel">
 								<a class="panel-link" data-toggle="collapse" data-parent="#accordion" href="#collapse_4" aria-expanded="true" aria-controls="collapse_3">
 									<div class="panel-heading" id="headingFour">
 										<div class="panel-number">4</div>
+										<div class="panel-number reception-only-number">1</div>
 										<h5 class="panel-title">Reception - 7.30pm</h5>
 									</div>
 								</a>
 								<div id="collapse_4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
 									<div class="panel-body">
-										<p>Bring out your dancing shoes and join us as we celebrate our love and dance the night away!.</p>
+										<p>Bring out your dancing shoes and join us as we celebrate our love and dance the night away!</p>
 									</div>
 								</div>
 							</div>
@@ -466,7 +467,7 @@
 					<h2 class="big-heading mt-0 mt-0">
 						<span class="custom-color">R</span>SVP
 					</h2>
-					<p class="sub-heading col-lg-8 offset-lg-2 margin-b-5">Please let us know you can make it as soon as possible guys! Looking forward to celebrating with all of you.</p>
+					<p class="sub-heading col-lg-8 offset-lg-2 margin-b-5">Please let us know you can make it as soon as possible guys! Looking forward to celebrating with all of you. Also please note that <span class="custom-color">each attendee will need to RSVP individually.</span></p>
 				</div>
 			</div>
 				<div class="row">
@@ -511,7 +512,7 @@
 						</div>
 						<div class="row">
 							<div class="form-group col-md-12 text-center">
-								<button type="submit" class="button-medium btn btn-default fill-btn">I am attending
+								<button type="submit" class="button-medium btn btn-default fill-btn">Send Respond
 									<img class="loader" src="img/Loader_to_form_white.gif" alt=""/>
 								</button>
 							</div>
@@ -594,7 +595,7 @@
 	       			});
 
 
-	       		marker.addListener('load', function() {
+	       		marker.addListener('click', function() {
 							infowindow.open(map, marker);
 		        });
 			}			

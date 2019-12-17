@@ -110,6 +110,30 @@ strong {
   padding: 10px;
 }
 
+.reception-only .panel-default {
+  display: none;
+}
+
+.reception-only .panel-default.reception-panel {
+  display: block;
+}
+
+.reception-only .panel-default.reception-panel .panel-number {
+  display: none;
+}
+
+.reception-only .panel-default.reception-panel .panel-number.reception-only-number {
+  display: inline-block;
+}
+
+.panel-default.reception-panel .panel-number {
+  display: inline-block;
+}
+
+.panel-default.reception-panel .panel-number.reception-only-number {
+  display: none;
+}
+
 @media screen and (max-width: 767px){
   .img-overlay{ 
     background-position: -515px;
