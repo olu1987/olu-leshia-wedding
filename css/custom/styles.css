@@ -1,5 +1,5 @@
 body {
-  font-family: Dormine !important;
+  font-family: Domine !important;
 }
 
 .custom-loader,
@@ -47,6 +47,7 @@ body {
 
 .ol-text {
   max-width: 450px;
+  width: 100%;  
 }
 
 .img-overlay{
@@ -55,6 +56,7 @@ body {
 		rgba(0, 0, 0, 0.45)
   ), url("../../img/custom/main-header.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .navbar-brand > img {
@@ -72,10 +74,14 @@ body {
   border-bottom: 1px solid #eeeeee;
 }
 
-#people {
+#people, #gift {
   background: #faf8f8;
   border-top: 1px solid goldenrod;
   border-bottom: 1px solid goldenrod;
+}
+
+#gift p {
+  margin-bottom: 0;
 }
 
 strong {
@@ -102,4 +108,10 @@ strong {
 .auth-overlay form {
   width: 100%;
   padding: 10px;
+}
+
+@media screen and (max-width: 767px){
+  .img-overlay{ 
+    background-position: -515px;
+  }
 }
