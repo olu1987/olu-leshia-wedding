@@ -47,6 +47,8 @@
 			//Recipients
 			$mail->setFrom('olu@claymoreminds.com');
 			$mail->addAddress('olu@claymoreminds.com');	// Add a recipient
+			$mail->addAddress('leshia.thomas@live.co.uk');	// Add a recipient
+
 
 			//Content
 			$mail->isHTML(true);						// Set email format to HTML
