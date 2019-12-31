@@ -134,8 +134,44 @@ strong {
   display: none;
 }
 
+.rsvp-banner {
+  position: fixed;
+  top: 0;
+  z-index: 1000000;
+  padding: 10px;
+  background: #faf8f8;
+  border-top: 1px solid goldenrod;
+  border-bottom: 1px solid goldenrod;
+  width: 100%;
+  text-align: center;
+  transition: all ease-in-out 300ms;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rsvp-banner .nav-link {
+  display: unset;
+  padding: 0;
+}
+
+#primary-navbar.affix + div {
+  top: 78px;
+}
+
 @media screen and (max-width: 767px){
   .img-overlay{ 
     background-position: -515px;
+  }
+}
+
+@media screen and (max-width: 991px){
+  #primary-navbar.affix, #primary_navbar_blog.affix, #primary-navbar-video.affix {
+    top: 47px;
+  }
+
+  #primary-navbar.affix + div {
+    top: 0;
   }
 }

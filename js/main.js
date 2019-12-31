@@ -93,6 +93,13 @@ $(document).ready(function() {
 		);
 	});	
 
+	$('.rsvp-banner a').on('click', function(){ 
+		$.scrollTo( 
+			this.hash, 1000,
+			{ offset:-73 }
+		);
+	});	
+
 	$('.scroll-link').on('click', function(){ 
 		$.scrollTo( 
 			this.hash, 1000,
@@ -444,5 +451,10 @@ if (auth) {
 		receptionOnly();
 	}
 }
+
+$('#myregsitry_embeded_iframe').load( function() {
+	$('#myregsitry_embeded_iframe').contents().find("head")
+		.append($("<style type='text/css'>  .my-class{display:none;}  </style>"));
+});
 
 });
