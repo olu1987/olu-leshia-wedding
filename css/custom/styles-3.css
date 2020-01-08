@@ -176,6 +176,10 @@ strong {
   .img-overlay{ 
     background-position: -515px;
   }
+
+  .registry-container {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 991px){
