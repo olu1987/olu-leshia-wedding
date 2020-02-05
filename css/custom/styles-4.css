@@ -183,10 +183,6 @@ strong {
 }
 
 @media screen and (max-width: 991px){
-  #primary-navbar.affix, #primary_navbar_blog.affix, #primary-navbar-video.affix {
-    top: 47px;
-  }
-
   #primary-navbar.affix + div {
     top: 0;
   }
